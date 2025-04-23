@@ -1,0 +1,364 @@
+/* General Reset */
+body, h1, h2, h3, p, a, img {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navigation Bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #DFF4F5; /* Light blue background */
+    padding: 20px 50px; /* Increased padding for better spacing */
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Logo Section */
+.navbar-logo {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Spacing between logo image and text */
+}
+
+.logo {
+    height: 40px; /* Adjusted logo size */
+}
+
+.logo-text {
+    font-size: 24px; /* Slightly larger font size */
+    font-weight: bold;
+    color: #000; /* Black text for logo */
+}
+
+/* Navigation Links */
+.navbar-links {
+    display: flex;
+    gap: 50px; /* Increased spacing between links */
+}
+
+.nav-link {
+    text-decoration: none;
+    font-size: 18px; /* Slightly larger font size */
+    color: #000; /* Black text for links */
+    font-weight: 500;
+}
+
+.nav-link:hover {
+    color: #007BFF; /* Blue hover effect */
+}
+
+/* Icons Section */
+.navbar-icons {
+    display: flex;
+    gap: 25px; /* Increased spacing between icons */
+}
+
+.icon {
+    height: 28px; /* Slightly larger icon size */
+    cursor: pointer;
+    filter: invert(0); /* Ensures black icons */
+}
+
+/* Banner Section */
+.banner {
+    position: relative; /* Enable positioning for child elements */
+    width: 100%;
+    height: 700px; /* Increased height for the banner */
+    background-color: #F9F9F9; /* Fallback background color */
+    overflow: hidden; /* Ensure no overflow from child elements */
+}
+
+/* Full-Screen Banner Image */
+.banner-image img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure the image covers the entire banner */
+    z-index: 1; /* Place the image behind the text */
+}
+
+/* Light Blue Text Container */
+.banner-text-container {
+    position: absolute;
+    right: 60px; /* Position the container on the right */
+    top: 55%;
+    transform: translateY(-50%); /* Center vertically */
+    background-color: #DFE9F4; /* Light blue background */
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 600px; /* Limit the width of the text container */
+    min-height: 350px; /* Increase the height of the container */
+    z-index: 2; /* Place the text container above the image */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
+}
+
+/* Text and Button Inside the Container */
+.banner-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.banner-subtitle {
+    font-size: 30px;
+    font-weight: bold;
+    color: #000000; /* Gray color */
+    margin-bottom: 10px;
+}
+
+.banner-title {
+    font-size: 80px;
+    font-weight: bold;
+    color: #B68D40; /* Gold color */
+    margin-bottom: 20px;
+}
+
+.banner-description {
+    font-size: 25px;
+    color: #333; /* Dark gray */
+    margin-bottom: 30px;
+}
+
+.banner-button {
+    background-color: #B68D40; /* Gold color */
+    color: #FFF;
+    border: none;
+    padding: 15px 30px; /* Increased padding for larger button */
+    font-size: 18px; /* Slightly larger font size */
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 200px; /* Set a fixed width */
+    height: 60px; /* Set a fixed height */
+    text-align: center; /* Center the text inside the button */
+}
+
+.banner-button:hover {
+    background-color: #A67C37; /* Darker gold on hover */
+}
+
+/* Categories Section */
+/* Categories Section */
+.categories-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; /* Reduced space between category items to 20px */
+    flex-wrap: wrap; /* Ensure responsiveness */
+    width: 80%; /* Full width of the container */
+    margin: 40px auto 0; /* Maintain the top margin */
+    height: 80%; /* Allow the height to adjust based on content */
+}
+
+.categories .section-title {
+    margin-top: 50px; /* Add white space above the Categories title */
+}
+
+.category-item {
+    text-align: center;
+    flex: 1;
+    max-width: 700px; /* Adjusted max width for images */
+    height: 60%; /* Set the height to 80% of the container */
+}
+
+.category-image {
+    width: 100%; /* Increased width to make the images larger */
+    height: auto; /* Adjust height automatically to maintain aspect ratio */
+    object-fit: cover; /* Maintain aspect ratio and crop excess */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin: 0 auto; /* Center the image horizontally */
+}
+
+.category-image:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+.category-name {
+    font-size: 18px;
+    font-weight: bold; /* Make the text bold */
+    color: #333; /* Dark gray */
+    margin-top: 15px;
+}
+
+/* Most Popular Section */
+.most-popular {
+    margin: 50px auto;
+    width: 90%;
+    text-align: center;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+/* Product Grid */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Four items in a row */
+    gap: 20px; /* Space between items */
+    justify-items: center;
+}
+
+@media (max-width: 1024px) {
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr); /* Two items in a row for medium screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .product-grid {
+        grid-template-columns: 1fr; /* One item per row for small screens */
+    }
+}
+
+/* Product Card */
+.product-card {
+    position: relative;
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    width: 90%;
+    max-width: 270px;
+    height: auto;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); /* Slightly darker shadow */
+    background-color: rgba(0, 0, 0, 0.4); /* Dark grey on hover */
+}
+
+.product-card:hover .product-image {
+    filter: grayscale(100%); /* Makes the image greyed out */
+    opacity: 0.6; /* Reduces the opacity for a disabled effect */
+    transition: filter 0.3s ease, opacity 0.3s ease; /* Smooth transition */
+}
+/* Product Image */
+.product-image {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+/* Product Info */
+.product-info {
+    padding: 15px;
+    text-align: left;
+}
+
+.product-name {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.product-description {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.product-price {
+    font-size: 16px;
+    font-weight: bold;
+    color: #000000;
+}
+
+.product-discount {
+    font-size: 14px;
+    color: #b4b0b0;
+    text-decoration: line-through;
+    margin-left: 10px;
+}
+
+/* Add to Cart Button */
+.add-to-cart {
+    position: absolute;
+    width: 202px; 
+    height: 48px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff; /* Blue background */
+    color: #B68D40; /* White text */
+    border: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.3s ease, background-color 0.3s ease;
+}
+
+.product-card:hover .add-to-cart {
+    opacity: 1;
+    background-color: #fff; /* Darker blue on hover */
+}
+
+/* Links for Share, Compare, and Like */
+.product-links {
+    position: absolute;
+    top: 60%; /* Position below the Add to Cart button */
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center; /* Center the links */
+    gap: 10px; /* Reduce spacing between icons */
+    width: auto; /* Adjust width to fit content */
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s ease;
+}
+
+.product-card:hover .product-links {
+    opacity: 1; /* Show links on hover */
+}
+
+/* Badge Container */
+.product-badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    opacity: 0.8; /* Semi-transparent */
+}
+
+/* Discount Badge */
+.product-badge.discount {
+    background-color: rgba(255, 0, 0, 0.8); /* Red background */
+}
+
+/* New Badge */
+.product-badge.new {
+    background-color: #2EC1AC; /* Green background */
+}
+
+/* Icon Styling */
+.product-icon {
+    width: 66px; /* Icon size */
+    height: 24px; /* Icon size */
+    margin-right: 5px; /* Spacing between icon and text */
+    filter: brightness(0) invert(1);/* Makes the icons white */
+   
+}
+
