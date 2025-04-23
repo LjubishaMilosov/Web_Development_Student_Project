@@ -1,3 +1,6 @@
+body {
+    font-family: 'Poppins', sans-serif;
+}
 /* General Reset */
 body, h1, h2, h3, p, a, img {
     margin: 0;
@@ -360,5 +363,124 @@ body, h1, h2, h3, p, a, img {
     margin-right: 5px; /* Spacing between icon and text */
     filter: brightness(0) invert(1);/* Makes the icons white */
    
+}
+
+/* Footer Section */
+.footer {
+    background-color: #F9F9F9;
+    padding: 50px 20px;
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-brand {
+    flex: 1;
+    min-width: 250px;
+}
+
+.footer-logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 15px;
+}
+
+.footer-address {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.6;
+}
+
+.footer-links, .footer-help, .footer-newsletter {
+    flex: 1;
+    min-width: 200px;
+}
+
+.footer-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #000;
+}
+
+.footer-links ul, .footer-help ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li, .footer-help li {
+    margin-bottom: 10px;
+}
+
+.footer-links a, .footer-help a {
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover, .footer-help a:hover {
+    color: #007BFF;
+}
+
+/* Newsletter Form */
+.newsletter-form {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Add spacing between the input and button */
+}
+
+.footer-newsletter .newsletter-form {
+    display: flex;
+    gap: 10px;
+}
+
+.newsletter-input {
+    flex: 1;
+    border: none; /* Remove the border */
+    outline: none; /* Remove the outline */
+    font-size: 16px; /* Adjust font size */
+    color: #333; /* Dark gray text */
+    padding: 5px 0; /* Add vertical padding */
+    border-bottom: 2px solid #000; /* Add a black underline */
+}
+
+.newsletter-input::placeholder {
+    color: #999; /* Light gray placeholder text */
+    font-size: 14px; /* Adjust placeholder font size */
+}
+
+.newsletter-button {
+    background: none; /* Remove background color */
+    border: none; /* Remove border */
+    font-size: 16px; /* Adjust font size */
+    font-weight: bold; /* Make the text bold */
+    color: #000; /* Black text */
+    cursor: pointer; /* Add pointer cursor */
+    text-transform: uppercase; /* Make the text uppercase */
+    border-bottom: 2px solid #000; /* Add a black underline */
+    padding-bottom: 7px; /* Adjust padding to align with the input underline */
+}
+
+.newsletter-button:hover {
+    text-decoration: underline; /* Add underline on hover */
+}
+
+.footer-bottom {
+    border-top: 1px solid #ccc; /* Add a grey line above */
+    padding-top: 10px; /* Add spacing above the text */
+    text-align: left; /* Align the text to the left */
+    font-size: 14px; /* Adjust font size */
+    color: #666; /* Grey text color */
+    margin-top: 20px; /* Add spacing between the footer content and the bottom text */
 }
 
