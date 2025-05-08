@@ -1,125 +1,60 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Furniture Shop</title>
     <link rel="stylesheet" href="../styles/homepage.css">
+    <link rel="stylesheet" href="../styles/header.css">
+    <link rel="stylesheet" href="../styles/footer.css">
 </head>
-
 <body>
-    <div class="main-container">
-
-    <header class="navbar">
-        <div class="navbar-logo">
-            <img src="../assets/images/navigation_bar/logo.png" alt="Furniro Logo" class="logo">
-            <span class="logo-text">Furniro</span>
+<section class="banner">
+    <div class="banner-content">
+        <div class="banner-image">
+            <img src="../assets/banner_image.png" alt="Furniture Banner" />
         </div>
-        <nav class="navbar-links">
-            <a href="#" class="nav-link">Home</a>
-            <a href="#" class="nav-link">Categories</a>
-            <a href="#" class="nav-link">Contact</a>
-        </nav>
-        <div class="navbar-icons">
-            <img src="../assets/images/navigation_bar/user_icon.svg" alt="User" class="icon">
-            <img src="../assets/images/navigation_bar/search_icon.svg" alt="Search" class="icon">
-            <img src="../assets/images/navigation_bar/favorite_icon.svg" alt="Favorite" class="icon">
-            <img src="../assets/images/navigation_bar/cart_icon.svg" alt="Cart" class="icon">
-        </div>
-    </header>
-
-    <!-- Banner Section -->
-    <section class="banner">
-        <div class="banner-content">
-            <!-- Left Side: Image -->
-            <div class="banner-image">
-                <img src="../assets/images/navigation_bar/banner_image.png" alt="Furniture Banner" />
-            </div>
-            <!-- Right Side: Text and Button -->
-            <div class="banner-text-container">
-                <div class="banner-text">
-                    <p class="banner-subtitle">New Arrival</p>
-                    <h1 class="banner-title">Discover Our New Collection</h1>
-                    <p class="banner-description">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper
-                        mattis.
-                    </p>
-                    <button class="banner-button">Buy Now</button>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="categories">
-        <h2 class="section-title">Categories</h2>
-        <div class="categories-container">
-            <!-- Dining Category -->
-            <div class="category-item">
-                <img src="../assets/images/dining-room/Dining-room.png" alt="Dining" class="category-image">
-                <p class="category-name">Dining</p>
-            </div>
-            <!-- Living Category -->
-            <div class="category-item">
-                <img src="../assets/images/living-room/Living-room.png" alt="Living" class="category-image">
-                <p class="category-name">Living</p>
-            </div>
-            <!-- Bedroom Category -->
-            <div class="category-item">
-                <img src="../assets/images/bedroom/Bedroom.png" alt="Bedroom" class="category-image">
-                <p class="category-name">Bedroom</p>
-            </div>
-        </div>
-    </section>
-
-    <section class="most-popular">
-        <h2 class="section-title">Most Popular</h2>
-        <div class="product-grid">
-            <!-- Product cards will be dynamically generated here -->
-        </div>
-    </section>
-
-    <footer class="footer">
-        <div class="footer-container">
-            <div class="footer-brand">
-                <h2 class="footer-logo">Funiro.</h2>
-                <p class="footer-address">
-                    400 University Drive Suite 200 Coral Gables,<br>
-                    FL 33134 USA
+        <div class="banner-text-container">
+            <div class="banner-text">
+                <p class="banner-subtitle">New Arrival</p>
+                <h1 class="banner-title">Discover Our New Collection</h1>
+                <p class="banner-description">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper
+                    mattis.
                 </p>
-            </div>
-            <div class="footer-links">
-                <h3 class="footer-title">Links</h3>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Shop</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </div>
-            <div class="footer-help">
-                <h3 class="footer-title">Help</h3>
-                <ul>
-                    <li><a href="#">Payment Options</a></li>
-                    <li><a href="#">Returns</a></li>
-                    <li><a href="#">Privacy Policies</a></li>
-                </ul>
-            </div>
-            <div class="footer-newsletter">
-                <h3 class="footer-title">Newsletter</h3>
-                <form class="newsletter-form">
-                    <input type="email" placeholder="Enter Your Email Address" class="newsletter-input">
-                    <button type="submit" class="newsletter-button">SUBSCRIBE</button>
-                </form>
+                <button class="banner-button">Buy Now</button>
             </div>
         </div>
-        <div class="footer-bottom">
-            <p>2025 Funiro. All rights reserved</p>
-        </div>
-    </footer>
-
     </div>
+</section>
+<section class="categories">
+    <h2 class="section-title">Categories</h2>
+    <div class="categories-container">
+        <div class="category-item">
+            <a href="./categories.html">
+                <img src="../assets/images/Dining-room.png" alt="Dining" class="category-image">
+                <p class="category-name">Dining</p>
+            </a>
+        </div>
+        <div class="category-item">
+            <a href="./categories.html">
+                <img src="../assets/images/Living-room.png" alt="Living" class="category-image">
+                <p class="category-name">Living</p>
+            </a>
+        </div>
+        <div class="category-item">
+            <a href="./categories.html">
+                <img src="../assets/images/Bedroom.png" alt="Bedroom" class="category-image">
+                <p class="category-name">Bedroom</p>
+            </a>
+        </div>
+    </div>
+</section>
+<section class="most-popular">
+    <h2 class="section-title">Most Popular</h2>
+    <div class="product-grid">
+    </div>
+</section>
+<script type="module" src="../scripts/homepage.js"></script>
 </body>
-<script src="../scripts/homepage.js"></script>
-
 </html>
